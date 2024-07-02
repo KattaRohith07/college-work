@@ -1,0 +1,122 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333333; /* Dark gray text color */
+  }
+  
+  .about-container {
+    max-width: 900px; /* Increase max-width for larger screens */
+    margin: 0 auto;
+    padding: 30px; /* Increase padding for better spacing */
+  }
+  
+  .navbar {
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff; /* White text color */
+}
+
+/* Dummy footer styles */
+
+  section {
+    margin-bottom: 60px; /* Increase margin-bottom for better separation between sections */
+  }
+  
+  h2 {
+    font-size: 28px; /* Increase font size for headings */
+    margin-bottom: 20px; /* Increase margin-bottom for better spacing */
+    color: #000000; /* Blue color */
+  }
+  
+  p {
+    font-size: 18px; /* Increase font size for paragraphs */
+    line-height: 1.6;
+  }
+  
+  /* Add hover effect to headings */
+  h2:hover {
+    color: #000000; /* Darker shade of blue on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* Add responsive styles here */
+  @media screen and (max-width: 768px) {
+    .about-container {
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  
+    h2 {
+      font-size: 24px; /* Decrease font size for headings on smaller screens */
+    }
+  
+    p {
+      font-size: 16px; /* Decrease font size for paragraphs on smaller screens */
+    }
+  }
+  
+  .about-container{
+    color:rgb(0, 0, 0);
+    margin-top:30px;
+    margin-bottom:30px;
+    border-radius: 10px;
+  }
+
+
+
+  /* Navbar styles */
+.navbar {
+  background-color: #00bfff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar-left h1 {
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.navbar-right a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+/* Media queries for responsiveness */
+
+
+
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

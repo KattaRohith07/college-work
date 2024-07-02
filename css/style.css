@@ -1,0 +1,200 @@
+/* common */
+*{
+    border: 0;
+    padding:0;
+  }
+  body{
+      font-family: "Plus Jakarta Sans";
+      font-size:14px;
+      color:white;
+      max-width:1920px;
+      margin:0 auto;
+  }
+  .T-header{
+    background: black;
+  }
+  div{
+    display: block;
+  }
+  .T-header header{
+    padding:2px 0px 2px 0px;
+  }
+  .main-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-1{
+    padding: 0px 30px;
+  }
+  .nav-2{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+  .nav-1 img{
+    margin-top: 14px;
+  }
+  .nav-content{
+    position: relative;
+    padding: 10px 30px 0px 10px;
+  }
+  .nav-content a {
+    color:white;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase; 
+  }
+  .manuscript{
+    padding:10px;
+    background-color: #c47428;
+  }
+  
+  .Tagline{
+    padding: 26px 228px 34px 4px;
+    margin-right: 50px;
+  }
+  
+  .Sub-Header{
+      background-image: url("https://indjst.org/assets/img/background-banner.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding: 30px 0px 30px 0px;
+  }
+  .client-image{
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .client-Logo{
+    height:auto;
+    min-width: 150px;
+  }
+  .client-content h1{
+    text-align: left;
+      font-weight: 600;
+      font-size: 30px;
+      color: #fff;
+      padding: 29px 0px 44px 19px;
+      border-left: 2px solid #fff;
+      margin-top: 20px;
+      margin-left: 10px;
+  }
+  
+  .add-header{
+    background-color: gray;
+  }
+  
+  .nav-3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 18px;
+  }
+  
+  .nav-content-2{
+    position: relative;
+    padding: 0px 10px 0px 10px;
+  }
+  .nav-content-2 a {
+    color:white;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+  }
+  .nav-content-2 a:hover{
+    color: blue;
+  }
+  
+  .form-group{
+    padding:10px 310px 10px 310px
+  }
+  .input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+  
+  
+  .title-section{
+    text-align: center;
+    color: black;
+  }
+  .title-section>.sub-title{
+    font-weight: 700;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: black;
+  }
+  .title-section>.title{
+    color: black;
+    font-size: 35px;
+    font-weight: 1000px;
+    margin: 0;
+    padding-top: 5px;
+    text-transform: uppercase;
+  }
+  
+  .Article_filter{
+    align-items: center;
+  }
+  .footer{
+    display:flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-logo-design{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding :10px;
+    color: white;
+    font-size: 30px;
+  }
+  .footer-logo-design>span{
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .copyright{
+    color: white;
+    padding-left:40px;
+  }
+  .footer-links{
+    display:flex;
+    align-items: center;
+  }
+  .footer-links a{
+    color: white;
+    text-decoration: none;
+  }
+  .footer-links-1{
+    padding: 3px;
+  }
+  .footer-links-2{
+    padding: 0px 25px;
+  }

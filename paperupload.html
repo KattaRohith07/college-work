@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Submission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="tel"],
+        .form-container input[type="file"] {
+           margin-left: 10%;
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            width: 30%;
+            padding: 10px;
+            margin-left: 30%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Paper Submission</h2>
+    <form id="submissionForm" onsubmit="return validateForm()" method="post" enctype="multipart/form-data">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" name="mobile" required>
+
+        <label for="paperTitle">Title of the Paper</label>
+        <input type="text" id="paperTitle" name="paperTitle" required>
+
+        <label for="paperFile">Upload Paper</label>
+        <input type="file" id="paperFile" name="paperFile" accept=".pdf,.doc,.docx" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    function validateForm() {
+        var firstName = document.getElementById('firstName').value;
+        var lastName = document.getElementById('lastName').value;
+        var email = document.getElementById('email').value;
+        var mobile = document.getElementById('mobile').value;
+        var paperTitle = document.getElementById('paperTitle').value;
+        var paperFile = document.getElementById('paperFile').files[0];
+
+        if (firstName && lastName && email && mobile && paperTitle && paperFile) {
+            alert("Paper submitted successfully!!!!");
+            window.location.href = 'userdash.html';
+            return false;  // Prevent the form from actually submitting
+        } else {
+            alert("Please fill out all fields and upload your paper.");
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>
