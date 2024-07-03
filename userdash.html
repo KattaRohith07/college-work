@@ -8,6 +8,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   
   <style>
+    
     /* Custom CSS for the dashboard */
     body {
       font-family: 'Arial', sans-serif;
@@ -121,9 +122,7 @@
     </button>
     <div class="collapse navbar-collapse" id="sidebarMenu">
       <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link" href="#dashboard"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
-        </li>
+
         <li class="nav-item">
             <a class="nav-link" href="paperupload.html"><i class="fas fa-upload"></i>New Paper</a>
           </li>
@@ -149,29 +148,11 @@
           <p>Welcome to the admin dashboard. Here you can manage paper submissions, reviews, and other details.</p>
           <div class="row">
             <div class="col-md-4">
-              <div class="card text-black bg-info mb-3">
-                <div class="card-header">New Submissions</div>
-                <div class="card-body">
-                  <h5 class="card-title">15</h5>
-                  <p class="card-text">New papers submitted this month</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
               <div class="card text-black bg-success mb-3">
                 <div class="card-header">Published Papers</div>
                 <div class="card-body">
                   <h5 class="card-title">30</h5>
                   <p class="card-text">Papers Published till now</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card text-black bg-warning mb-3">
-                <div class="card-header">Pending Reviews</div>
-                <div class="card-body">
-                  <h5 class="card-title">8</h5>
-                  <p class="card-text">Papers awaiting review</p>
                 </div>
               </div>
             </div>
@@ -195,7 +176,7 @@
                   <th>Title</th>
                   <th>Author</th>
                   <th>Submission Date</th>
-                  <th>Status</th>
+                  <th>View</th>
                 </tr>
               </thead>
               <tbody>
@@ -204,7 +185,11 @@
                   <td>AI in Healthcare</td>
                   <td>John Doe</td>
                   <td>2024-06-20</td>
-                  <td><span class="badge badge-warning">Pending</span></td>
+                  <td>
+                    <a href="" download>
+                        <i class="fas fa-file-pdf" style="font-size: x-large; align-items: center; text-align: center;"></i>
+                    </a>
+                </td>
                 </tr>
                 <!-- Add more rows as needed -->
               </tbody>
